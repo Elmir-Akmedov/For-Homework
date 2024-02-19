@@ -1,3 +1,4 @@
+
 """
 #- Map -
 #A. Create a function that takes a list of numbers and uses the map() function to 
@@ -16,14 +17,17 @@ print(modified_list)
 
 #C. Implement a function that takes a list of numbers and uses the map() function to 
 #calculate the square root of each number.
+__all__ = ["greet_names","square_root"]
 
-user_list = input(">> ").split()
 def square_root(x):
     num = int(x) * 0.5
     return num
-modified_list = list(map(square_root, user_list))
-print(modified_list)
-"""
+
+if __name__ == "__main__":
+    user_list = input(">> ").split()
+    modified_list = list(map(square_root, user_list))
+    print(modified_list)
+
 #D. Write a function that takes a list of names and uses map() to format them as "Hello, {name}!".
 
 def greet_names(names):
@@ -32,10 +36,12 @@ def greet_names(names):
     else:
         formatted_names = ", ".join(names[:-1])
         return f"Hello {formatted_names}, and {names[-1]}"
+
+
 names_list = input(">> ").split()
 greeting = greet_names(names_list)
 print(greeting)
-
+"""
 #E. Create a function that takes a list of numbers and uses the map() function to generate a 
 #power series for each number, up to a specified exponent.
 #F. Write a function that takes two lists of strings and uses map() to concatenate the elements 

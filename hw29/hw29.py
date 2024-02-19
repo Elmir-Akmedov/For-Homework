@@ -1,4 +1,4 @@
-"""
+
 #- Decorators -
 #A. Write a decorator function print_decorator that prints a message 
 #before and after the decorated function is called. The message should 
@@ -15,9 +15,9 @@ def print_decorator(func):
 @print_decorator
 def example_function():
     print("Hello, world!")
-
-example_function()
-
+if __name__ == "__main__":
+    example_function() 
+"""
 #B. Write a decorator function star_decorator that decorates the output 
 #of the decorated function with a pattern of "*****" before and after the output.
 #Apply this decorator to a function named example_function that takes 
